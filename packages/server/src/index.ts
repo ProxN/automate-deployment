@@ -11,6 +11,12 @@ const Main = () => {
     });
   });
 
+  app.get('/:id', (req, res) => {
+    res.status(200).json({
+      message: 'dynamic route',
+    });
+  });
+
   app.get('/status', (req, res) => {
     res.status(200).json({
       message: 'server is working',
