@@ -55,3 +55,4 @@ jobs:
             yarn install
             cd packages/server
             yarn build
+            pm2 restart app1
